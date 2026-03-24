@@ -1,76 +1,45 @@
-# CIS project: Adverserial Interactive Learning
+# Adversarial RL Project
 
+A research project exploring adversarial reinforcement learning and human-in-the-loop interaction in a custom multi-agent environment.
 
-# Week 1:
-- Literature Review
-- Implement the [paper's](https://arxiv.org/pdf/2103.04847.pdf) code
+This project was developed to study how reinforcement learning agents behave under adversarial conditions, and how human intervention can be incorporated into the training process to influence environment difficulty and policy development.
 
+## Overview
 
-# Week 2:
-## Meeting summary:
+The goal of this project is to build and evaluate a reinforcement learning framework in which an agent learns in the presence of adversarial or dynamically changing conditions.
 
-1. Wrong plan, should think about my own game and use python to build the environment
+The project combines:
+- custom environment design
+- adversarial reinforcement learning concepts
+- policy optimization with PPO
+- human-in-the-loop interaction
+- experimental evaluation in a multi-agent setting
 
-2. Remember to be very clear about the whole paper, this should be the first priority
+This repository focuses on practical implementation and experimentation rather than a production-ready RL framework.
 
-## Plan:
-- [Paper](https://arxiv.org/pdf/2103.04847.pdf) flowchart
-- Literature reviews and plan for proposal
-- Implement the env
-- Prepare slides
-- Look at the robosuite
-### Reading List:
- - Increasing Generality in Machine Learning through
-Procedural Content Generation
- - Domain Adversarial Reinforcement Learning
- - Adversarial Robust Deep Reinforcement Learning Requires Redefining Robustness
+## Project goals
 
-# Week 3:
-## Summary:
-1. No meeting this week due to Wafa's conference travelling
+- Design a custom RL environment with adversarial dynamics
+- Train learning agents using PPO-based methods
+- Explore how environment difficulty and adversarial behavior affect learning
+- Introduce human-in-the-loop control to influence training conditions
+- Evaluate agent performance against baseline settings
 
-## Plan:
-- Finish the proposal
-- Continue the implementation of the Environment
-- Look deeper into the [robosuite](https://robosuite.ai/docs/overview.html)
+## Main ideas
 
-# Week 4:
-## Meeting summary:
-1. Continue implemeting the Environment
-    - Adding the interactive way 
-    - Consider changing of the environment in terms of the generator's action
+This project investigates reinforcement learning under more challenging and interactive conditions than standard single-agent training setups.
 
-# Week 5:
-## Meeting summary:
-1. Change the way of applying "Interaction", for now, considering do it by swapping game difficulties
-2. Creating a module diagram for different methods of interaction 
+Key ideas include:
+- training in a custom adversarial environment
+- modifying the environment during training
+- evaluating policy robustness under changing conditions
+- studying whether human intervention can improve training effectiveness
 
+## Repository structure
 
-# Week 6:
-Skip Meeting
-
-# Week 7:
-## Meeting summary:
-1. Implementing the idea that the generator creates the whole environment first, then solver starts solving the environment.
-2. Try Q learning to see how the action is choosing 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Learning sources in the future:
- - book: "Deep Reinforcement Learning" by Sergey Levine.
-
- - book: "Learning ROS for Robotics Programming" by Enrique Fernandez and Luis Sanchez Crespo 
+```text
+.
+├── adversarilRL/    # Core environment and project-specific code
+├── learning/        # Training logic and learning-related components
+├── scripts/         # Helper scripts for running experiments
+└── README.md
